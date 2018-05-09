@@ -1,0 +1,29 @@
+{
+  "name": "rnsample",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "preinstall": "cd .. && yarn prepublish",
+    "postinstall":
+    "rm -rf node_modules/babel-plugin-animated-simplifier/{.git,node_modules,Example,AndroidNativeExample}"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "fs": "^0.0.1-security",
+    "react": "16.3.1",
+    "react-native": "0.55.3",
+    "react-native-fs": "^2.9.12"
+  },
+  "devDependencies": {
+    "babel-jest": "22.4.3",
+    "babel-plugin-animated-simplifier": "..",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.4.3",
+    "react-test-renderer": "16.3.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
