@@ -1,4 +1,4 @@
 {
   "presets": ["react-native"],
-  "plugins": ["babel-plugin-animated-simplifier"]
+  "plugins": ["babel-plugin-animated-block"]
 }

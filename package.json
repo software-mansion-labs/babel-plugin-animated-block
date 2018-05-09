@@ -1,11 +1,10 @@
 {
-  "name": "babel-plugin-remove-decorator",
+  "name": "babel-plugin-animated-block",
   "version": "1.0.0",
-  "description": "Babel 6 plugin that removes all decorators",
   "main": "built.js",
   "license": "MIT",
   "scripts": {
-    "prepublish": "babel index.js -o built.js",
+    "prepublish": "rm -rf plugin && mkdir plugin && babel index.js -o plugin/index.js && babel index.js -o built.js",
     "test": "jest"
   },
   "devDependencies": {

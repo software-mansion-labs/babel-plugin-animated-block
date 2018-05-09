@@ -1,4 +1,4 @@
-# babel-plugin-animated-simplifier
+# babel-plugin-animated-block
 Babel 6 plugin that simplify animated expressions in React Native
 Removes decorators from top level classes, for example:
 
@@ -59,7 +59,7 @@ Add to your babelrc:
 {
   "env": {
     "test": {
-      "plugins": ["babel-plugin-animated-simplifier"]
+      "plugins": ["babel-plugin-animated-block"]
     }
   }
 }
@@ -73,7 +73,7 @@ yarn
 react-native run-android / react-native run-ios
 ```
 
-## build production
+## Build production
 In order to test you need to build your changes
 ```bash
 yarn prepublish

@@ -1,6 +1,9 @@
-const replecableArray = [
-  'spring', 'add', 'Value', 'timing', 'sequence'
-]
+let replecableArray = ['View', 'Text', 'Image', 'ScrollView', 'Value',
+  'ValueXY', 'Interpolation', 'Node', 'decay', 'timing', 'spring', 'add',
+  'divide', 'multiply', 'modulo', 'diffClamp', 'delay', 'sequence', 'parallel',
+  'stagger', 'loop', 'event', 'createAnimatedComponent', 'attachNativeEvent', 'forkEvent', 'unforkEvent'];
+
+
 export default function myImportInjector({ types: t }) {
   const replacableValues = new Set(replecableArray);
 
@@ -9,7 +12,7 @@ export default function myImportInjector({ types: t }) {
   return {
     visitor: {
       Program(path) {
-        for (let i = 0; i < path.parent.comments.length; i++) {
+        for (let i = 0; i < path.parent.comments.length; i++) {-
           path.parent.comments[i].value === ' Animated' &&
           initRanges.push(path.parent.comments[i].start - 2);
         }
