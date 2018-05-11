@@ -7,7 +7,7 @@
     "test": "jest",
     "preinstall": "cd .. && yarn prepublish",
     "postinstall":
-    "rm -rf node_modules/babel-plugin-animated-block/{.git,node_modules,Example,AndroidNativeExample}"
+    "rm -rf node_modules/babel-plugin-animated-block/{.git,node_modules,example}"
   },
   "dependencies": {
     "babel-core": "^6.26.3",
