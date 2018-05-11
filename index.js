@@ -12,8 +12,8 @@ export default function myImportInjector({ types: t }) {
   return {
     visitor: {
       Program(path) {
-        for (let i = 0; i < path.parent.comments.length; i++) {-
-          path.parent.comments[i].value === ' Animated' &&
+        for (let i = 0; i < path.parent.comments.length; i++) {
+          path.parent.comments[i].value.trim() === 'Animated' &&
           initRanges.push(path.parent.comments[i].start - 2);
         }
       },
