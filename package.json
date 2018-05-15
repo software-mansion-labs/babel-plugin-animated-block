@@ -1,12 +1,15 @@
 {
   "name": "babel-plugin-animated-block",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "built.js",
   "license": "MIT",
   "scripts": {
     "prepublish": "rm -rf plugin && mkdir plugin && babel index.js -o plugin/index.js && babel index.js -o built.js",
     "test": "jest"
   },
+  "files": [
+    "built.js"
+  ],
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.18.0",
